@@ -78,14 +78,14 @@ export default function Hero() {
      >
        <div ref={heroRef} id={'hero'} className="relative flex w-full flex-col md:gap-y-(--space-lg)">
          <h1
-          className="text-[clamp(3rem,1.200rem+10.000vw,10rem)] xl:text-(length:--text-heading-display) font-semibold overflow-clip">
+          className="text-[clamp(3rem,1.200rem+10.000vw,10rem)] xl:text-(length:--text-heading-display) font-medium overflow-clip">
            <CharReveal
             className="w-full hidden h-full lg:block"
             text="MUKHAMMADAMIN"
             delay={0}
            />
            <span
-            className="flex flex-col text-(length:--text-heading-display) font-semibold uppercase leading-[80%] tracking-(--tracking-heading) text-(--color-secondary-400) lg:hidden">
+            className="flex flex-col text-(length:--text-heading-display) font-normal uppercase leading-[80%] tracking-(--tracking-heading) text-(--color-secondary-400) lg:hidden">
               <CharReveal text="MUKHAMMAD" delay={0}/>
               <CharReveal text="AMIN" delay={0.3}/>
             </span>

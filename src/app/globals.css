@@ -91,9 +91,9 @@ html.lenis body {
     transition-behavior: allow-discrete;
 }
 
-/*body {*/
-/*    font-family: var(--font-montreal) sans-serif;*/
-/*}*/
+body {
+    font-family: var(--font-montreal), sans-serif;
+}
 
 
 @layer utilities {

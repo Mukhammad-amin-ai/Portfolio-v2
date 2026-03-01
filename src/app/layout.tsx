@@ -53,7 +53,7 @@ const montrealMono = localFont({
       style: "italic",
     },
   ],
-  variable: "--font-montreal",
+  // variable: "--font-montreal",
 });
 
 export const metadata: Metadata = {
@@ -96,11 +96,10 @@ export default function RootLayout({
   return (
    <html
     lang="en"
-    className={`${montrealMono.variable} ${montrealMono.variable} ${inter.variable}`}
+    className={`${montrealMono.className} ${inter.className} ${geistMono.className} ${geistSans.className}`}
    >
-   {/*<body className="font-montrealMono antialiased bg-(--color-accent-200) ">*/}
    <body
-    className={`font-montrealMono antialiased bg-(--color-accent-200)`}>
+    className={`antialiased bg-(--color-accent-200)`}>
    <SmoothScroll>{children}</SmoothScroll>
    </body>
    </html>
