@@ -1,6 +1,6 @@
 'use client'
 
-import {useState, useEffect, useLayoutEffect} from 'react'
+import {useState, useEffect} from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import CharReveal from '@/components/animations/CharReveal'

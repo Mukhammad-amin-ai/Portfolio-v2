@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <section className="mb-[-100svh] py-0">
@@ -245,10 +247,10 @@ export default function HeroSection() {
                     rotate: "none",
                   }}
                 >
-                  <img
-                    alt="Just an Image."
+                  <Image
                     width="1536"
                     height="2040"
+                    alt="Just an Image."
                     decoding="async"
                     className="h-full w-full object-cover object-center grayscale"
                     style={{ color: "transparent" }}

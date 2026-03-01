@@ -5,7 +5,7 @@ import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import CharReveal from '@/components/animations/CharReveal'
 import TextReveal from '@/components/animations/TextReveal'
-import GlitchText from '@/components/animations/GlitchText'
+// import GlitchText from '@/components/animations/GlitchText'
 import ProjectCard from '@/components/ProjectCard'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -86,11 +86,11 @@ export default function Works() {
     }
   }, [])
 
-  const addRef = (el: HTMLDivElement | null) => {
-    if (el && !refs.current.includes(el)) {
-      refs.current.push(el)
-    }
-  }
+  // const addRef = (el: HTMLDivElement | null) => {
+  //   if (el && !refs.current.includes(el)) {
+  //     refs.current.push(el)
+  //   }
+  // }
 
   return (
    <section id="Works">
