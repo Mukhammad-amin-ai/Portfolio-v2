@@ -3,9 +3,11 @@
 import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// import GlitchText from '@/components/animations/GlitchText'
+
 import CharReveal from "@/components/animations/CharReveal";
 import TextReveal from "@/components/animations/TextReveal";
-// import GlitchText from '@/components/animations/GlitchText'
 import ProjectCard from "@/components/ProjectCard";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -17,6 +19,7 @@ const projects = [
     type: "Travel agency, Next.js, SSR, Brevo",
     name: "Hant Travel",
     link: "https://hant-travel.vercel.app",
+    thumb: "/projects/thumbnail/hant-travel.webp",
     blurDataUrl:
       "https://res.cloudinary.com/dnqepr6ku/image/upload/w_10,q_1/v1773281522/6_jugckf_k17lkh.webp",
   },
@@ -26,6 +29,7 @@ const projects = [
     type: "CRM platform, Vue 2 → Vue 3 migration",
     name: "Novicombank",
     link: "https://novincom.vercel.app/",
+    thumb: "/projects/thumbnail/novicombank.webp",
     blurDataUrl:
       "https://res.cloudinary.com/dnqepr6ku/image/upload/w_10,q_1/v1773281557/3_nzf5vb_zsbirn.webp",
   },
@@ -35,27 +39,40 @@ const projects = [
     type: "Platform, Nuxt 2/3, WebSockets, AWS S3",
     name: "Nebula GTS",
     link: "https://nebulagts.io",
+    thumb: "/projects/thumbnail/nebula-gts.webp",
     blurDataUrl:
       "https://res.cloudinary.com/dnqepr6ku/image/upload/w_10,q_1/v1773281522/2_frjjt5_knly9k.webp",
   },
   {
     source: "7_lfufd9_wdpzyi",
     muxid: "",
-    type: "QR menu for restaurants, MERN",
-    name: "Bar Karas",
-    link: "https://bar-karas.vercel.app",
+    type: "Crypto landing page",
+    name: "Spark Lux",
+    link: "https://sparklux-biz.vercel.app",
+    thumb: "/projects/thumbnail/sparklux.webp",
     blurDataUrl:
       "https://res.cloudinary.com/dnqepr6ku/image/upload/w_10,q_1/v1773281523/7_lfufd9_wdpzyi.webp",
   },
   {
     source: "1_phf5ng_b2sqsj",
     muxid: "",
-    type: "Crypto/fintech landings, HTML, Vercel",
-    name: "Crypto Landings",
-    link: "https://sparklux-biz.vercel.app",
+    type: "DeFi landing page",
+    name: "Arrow Fi",
+    link: "https://arrow-fi-xyz.vercel.app",
+    thumb: "/projects/thumbnail/arrow-fi.webp",
     blurDataUrl:
       "https://res.cloudinary.com/dnqepr6ku/image/upload/w_10,q_1/v1773281509/1_phf5ng_b2sqsj.webp",
   },
+  // {
+  //   source: "7_lfufd9_wdpzyi",
+  //   muxid: "",
+  //   type: "QR menu for restaurants, MERN",
+  //   name: "Bar Karas",
+  //   link: "https://bar-karas.vercel.app",
+  //   thumb: "/projects/thumbnail/hant-travel.webp",
+  //   blurDataUrl:
+  //     "https://res.cloudinary.com/dnqepr6ku/image/upload/w_10,q_1/v1773281523/7_lfufd9_wdpzyi.webp",
+  // },
 ];
 
 export default function Works() {
