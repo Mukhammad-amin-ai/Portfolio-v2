@@ -27,7 +27,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
         <div
          className="relative mt-5 flex aspect-square items-center justify-center overflow-clip rounded-md bg-(--color-secondary-300) p-(--space-md) sm:p-(--space-lg) xl:p-(--space-2xl)">
           <Image
-           src={`https://res.cloudinary.com/dnocsf5bq/image/upload/${source}.webp`}
+           src={`https://res.cloudinary.com/dnqepr6ku/image/upload/${source}.webp`}
            alt="background"
            fill
            className="h-full absolute w-full object-cover object-center transition-opacity duration-700 ease-in-out"

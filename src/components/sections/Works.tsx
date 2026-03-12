@@ -12,58 +12,49 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    source: "6_jugckf",
+    source: "6_jugckf_k17lkh",
     muxid: "",
     type: "Travel agency, Next.js, SSR, Brevo",
     name: "Hant Travel",
     link: "https://hant-travel.vercel.app",
     blurDataUrl:
-      "https://res.cloudinary.com/dnocsf5bq/image/upload/w_10,q_1/v1748325061/6_jugckf.webp",
+      "https://res.cloudinary.com/dnqepr6ku/image/upload/w_10,q_1/v1773281522/6_jugckf_k17lkh.webp",
   },
   {
-    source: "3_nzf5vb",
+    source: "3_nzf5vb_zsbirn",
     muxid: "",
     type: "CRM platform, Vue 2 → Vue 3 migration",
     name: "Novicombank",
     link: "https://novincom.vercel.app/",
     blurDataUrl:
-      "https://res.cloudinary.com/dnocsf5bq/image/upload/w_10,q_1/v1748325070/3_nzf5vb.jpg",
+      "https://res.cloudinary.com/dnqepr6ku/image/upload/w_10,q_1/v1773281557/3_nzf5vb_zsbirn.webp",
   },
   {
-    source: "2_frjjt5",
+    source: "2_frjjt5_knly9k",
     muxid: "",
     type: "Platform, Nuxt 2/3, WebSockets, AWS S3",
     name: "Nebula GTS",
     link: "https://nebulagts.io",
     blurDataUrl:
-      "https://res.cloudinary.com/dnocsf5bq/image/upload/w_10,q_1/v1748325060/2_frjjt5.webp",
+      "https://res.cloudinary.com/dnqepr6ku/image/upload/w_10,q_1/v1773281522/2_frjjt5_knly9k.webp",
   },
   {
-    source: "7_lfufd9",
+    source: "7_lfufd9_wdpzyi",
     muxid: "",
-    type: "QR menu for restaurants, MERN, YooKassa",
+    type: "QR menu for restaurants, MERN",
     name: "Bar Karas",
     link: "https://bar-karas.vercel.app",
     blurDataUrl:
-      "https://res.cloudinary.com/dnocsf5bq/image/upload/w_10,q_1/v1748325062/7_lfufd9.webp",
+      "https://res.cloudinary.com/dnqepr6ku/image/upload/w_10,q_1/v1773281523/7_lfufd9_wdpzyi.webp",
   },
   {
-    source: "1_phf5ng",
-    muxid: "",
-    type: "Training registration, Vue.js, Google Docs",
-    name: "My Life Planner",
-    link: "https://my-life-planner.netlify.app",
-    blurDataUrl:
-      "https://res.cloudinary.com/dnocsf5bq/image/upload/w_10,q_1/v1748325060/1_phf5ng.webp",
-  },
-  {
-    source: "6_jugckf",
+    source: "1_phf5ng_b2sqsj",
     muxid: "",
     type: "Crypto/fintech landings, HTML, Vercel",
     name: "Crypto Landings",
     link: "https://sparklux-biz.vercel.app",
     blurDataUrl:
-      "https://res.cloudinary.com/dnocsf5bq/image/upload/w_10,q_1/v1748325061/6_jugckf.webp",
+      "https://res.cloudinary.com/dnqepr6ku/image/upload/w_10,q_1/v1773281509/1_phf5ng_b2sqsj.webp",
   },
 ];
 
