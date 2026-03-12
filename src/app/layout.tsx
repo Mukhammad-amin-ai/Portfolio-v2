@@ -1,5 +1,5 @@
-import type {Metadata} from "next";
-import {Inter, Geist_Mono, Geist} from "next/font/google";
+import type { Metadata } from "next";
+import { Inter, Geist_Mono, Geist } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 
@@ -53,25 +53,27 @@ const montrealMono = localFont({
       style: "italic",
     },
   ],
-  // variable: "--font-montreal",
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.ico",
+  },
   title: "Muhammadamin Akhmadov — Fullstack Developer",
   description:
-   "Fullstack JS developer portfolio. Next.js, Vue, React, Node.js. Projects: Hant Travel, Novicombank, Bar Karas, Nebula GTS and more.",
+    "Fullstack JS developer portfolio. Next.js, Vue, React, Node.js. Projects: Hant Travel, Novicombank, Bar Karas, Nebula GTS and more.",
   keywords:
-   "Muhammadamin Akhmadov, Fullstack Developer, JavaScript, React, Vue, Next.js, Node.js, Samarkand",
+    "Muhammadamin Akhmadov, Fullstack Developer, JavaScript, React, Vue, Next.js, Node.js, Samarkand",
   creator: "Muhammadamin Akhmadov",
   openGraph: {
     title: "Muhammadamin Akhmadov — Fullstack Developer",
     description:
-     "Fullstack JS developer. 2+ years experience. Next.js, Vue, React, MERN. Open to projects and remote work.",
+      "Fullstack JS developer. 2+ years experience. Next.js, Vue, React, MERN. Open to projects and remote work.",
     url: "https://muhammadamin.dev",
     siteName: "Muhammadamin Akhmadov — Portfolio",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Muhammadamin Akhmadov — Portfolio",
@@ -84,24 +86,23 @@ export const metadata: Metadata = {
     creator: "@muhammad_amin_software_engineer",
     title: "Muhammadamin Akhmadov — Fullstack Developer",
     description: "Fullstack JS, React, Vue, Next.js. Projects and contact.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
 };
 
 export default function RootLayout({
-                                     children,
-                                   }: {
+  children,
+}: {
   children: React.ReactNode;
 }) {
   return (
-   <html
-    lang="en"
-    className={`${montrealMono.className} ${inter.className} ${geistMono.className} ${geistSans.className}`}
-   >
-   <body
-    className={`antialiased bg-(--color-accent-200)`}>
-   <SmoothScroll>{children}</SmoothScroll>
-   </body>
-   </html>
+    <html
+      lang="en"
+      className={`${montrealMono.className} ${inter.className} ${geistMono.className} ${geistSans.className}`}
+    >
+      <body className={`antialiased bg-(--color-accent-200)`}>
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
+    </html>
   );
 }

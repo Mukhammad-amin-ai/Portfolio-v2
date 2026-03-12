@@ -18,7 +18,7 @@ export default function PageTransition() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 z-[15] flex h-screen w-screen bg-secondary-400"
+      className="fixed top-0 left-0 z-15 flex h-screen w-screen bg-secondary-400"
       initial={{ y: '0vh' }}
       animate={{ y: '-100vh' }}
       transition={{ duration: 2, ease: [0.2, 0.38, 0.09, 0.91] }}
