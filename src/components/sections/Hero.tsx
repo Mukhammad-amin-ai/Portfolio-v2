@@ -36,8 +36,8 @@ export default function Hero() {
   const available = () => {
     const now = new Date();
     const month = months[new Date().getMonth()];
-    const day = now.getDay();
-    return `${month} \`${day}`;
+    const day = now.getDate();
+    return `${month} \` ${day}`;
   };
 
   useEffect(() => {

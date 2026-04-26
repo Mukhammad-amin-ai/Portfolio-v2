@@ -6,18 +6,24 @@ const TG_CHAT_ID = 526075074;
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-
     const { name, email, message } = body;
 
     if (!message) {
       return NextResponse.json({ error: "Message required" }, { status: 400 });
     }
+    const ip =
+      req.headers.get("x-forwarded-for")?.split(",")[0] ||
+      req.headers.get("x-real-ip") ||
+      "unknown";
+    const userAgent = req.headers.get("user-agent") || "unknown";
 
     const text = `
 📩 New Contact Message
 
 👤 Name: ${name || "-"}
 📧 Email: ${email || "-"}
+📍 IP: ${ip}
+🖥 UA: ${userAgent}
 💬 Message:
 ${message}
 `;
